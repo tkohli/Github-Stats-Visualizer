@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+  <input type="url" id="image-input">
+  <button id="b" onclick=' document.getElementById("b").addEventListener("click", e => {
+    let imageInput = document.getElementById("image-input");
+    let image = document.getElementById("image");
+    if (imageInput.value) image.src = "https://github-profile-trophy.vercel.app/?username="+imageInput.value;
+  
+  let image2 = document.getElementById("image2");
+    if (imageInput.value) image2.src = "https://github-readme-streak-stats.herokuapp.com/?user="+imageInput.value;
+  });
+  '>Change Image</button>
+  <br>
+  
+  <img src="" id="image">
+  <img src="" id="image2">
+</body>
+</html>
